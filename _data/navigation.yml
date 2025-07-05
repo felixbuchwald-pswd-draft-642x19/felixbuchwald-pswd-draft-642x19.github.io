@@ -1,0 +1,14 @@
+# main links
+main:
+  - title: "Work"
+    url: /#work
+    blank: false
+  - title: "Personal Brand"
+    url: /#personalbrand
+    blank: false
+  - title: "About"
+    url: /#about
+    blank: false
+  - title: "Contact"
+    url: /#contact
+    blank: false
