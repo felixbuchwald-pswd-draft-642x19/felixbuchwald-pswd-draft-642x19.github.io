@@ -1,5 +1,12 @@
 .section-sep {
-    border: 1px solid transparent;
+    border: 4px solid;
+    border-image: linear-gradient(to right, $link-color, $primary-color, $link-color) 1;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
 section.site-section {

@@ -1,23 +1,26 @@
 <!-- start custom footer snippets -->
 
-<script src="/assets/libraries/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
     AOS.init({
-        duration: 700, // animation duration in ms
-        once: true     // animate only once per element
+        duration: 700,
+        offset: -300,
+        once: true
     });
 </script>
 
 
-<script src="/assets/libraries/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script>
     const lightbox = GLightbox({
-        selector: 'a[data-gallery]',
+        selector: 'a[data-lightbox]',
         touchNavigation: true,
         autoplayVideos: true,
     });
 </script>
 
 
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- end custom footer snippets -->

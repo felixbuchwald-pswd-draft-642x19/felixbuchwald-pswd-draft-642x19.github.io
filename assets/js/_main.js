@@ -82,9 +82,9 @@ $(function() {
   }
 
   // add lightbox class to all image links
-  //$(
-  //  "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
-  //).has("> img").addClass("image-popup");
+  $(
+    "a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif'],a[href$='.webp']"
+  ).has("> img").addClass("image-popup");
 
   // Magnific-Popup options
   $(".image-popup").magnificPopup({
@@ -133,4 +133,36 @@ $(function() {
       $(this).append(anchor);
     }
   });
+
+  // Swiper Testimonials
+  if (document.querySelector('.swiper-container')) {
+      const swiper = new Swiper('.swiper-container', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          slidesPerView: 1,
+          spaceBetween: 30,
+          effect: 'fade', // Optional: adds a fade effect
+          fadeEffect: {
+              crossFade: true,
+          },
+
+          // If we need pagination
+          pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+          },
+
+          // Navigation arrows
+          navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+              el: '.swiper-scrollbar',
+          },
+      });
+  }
 });
